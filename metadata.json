@@ -1,0 +1,8 @@
+{
+  "name": "UMST: Universal Multi-Sense Translator",
+  "description": "A unified agent interface that fuses video, audio, and environmental sensors to generate human-readable intents and alerts using Gemini 2.5.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
