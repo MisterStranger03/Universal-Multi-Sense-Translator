@@ -21,18 +21,18 @@ A browser-based multi-sensory translation orchestration app that integrates mult
 ┌──────────────────────────────────────────────────────────────┐
 │                        Browser (SPA)                         │
 │                                                              │
-│  ┌──────────┐  ┌─────────────┐  ┌──────────────────────┐   │
-│  │ Sensor   │  │  Timeline   │  │   Orchestrator View  │   │
-│  │  Panel   │  │   Panel     │  │  (LLM decisions UI)  │   │
-│  └────┬─────┘  └──────┬──────┘  └──────────┬───────────┘   │
-│       └───────────────┴────────────────────┘                │
+│  ┌──────────┐  ┌─────────────┐  ┌──────────────────────┐     │
+│  │ Sensor   │  │  Timeline   │  │   Orchestrator View  │     │
+│  │  Panel   │  │   Panel     │  │  (LLM decisions UI)  │     │
+│  └────┬─────┘  └──────┬──────┘  └──────────┬───────────┘     │
+│       └───────────────┴────────────────────┘                 │
 │                         │                                    │
 │                    ┌────▼────┐                               │
 │                    │ App.tsx │  ← Global state orchestration │
 │                    └────┬────┘                               │
-│              ┌──────────▼──────────┐                        │
-│              │  geminiService.ts   │  ← LLM API wrapper     │
-│              └──────────┬──────────┘                        │
+│              ┌──────────▼──────────┐                         │
+│              │  geminiService.ts   │  ← LLM API wrapper      │
+│              └──────────┬──────────┘                         │
 └─────────────────────────┼────────────────────────────────────┘
                           │  HTTPS / REST
                     ┌─────▼─────┐
